@@ -1,0 +1,66 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{% static 'signup/style.css' %}">
+    <title>sample</title>
+</head>
+<body>
+
+    
+    <div class="grid-container">
+        <header>
+            <div class="logo"><a href="index.html"><img src="{% static 'signup/img/logo.png' %}" alt="styleflow logo"></a></div>
+        </header>
+        <section class="one">
+            <div class="writeup">
+                <div class="text">
+                    <p>To <span>access</span> 10,000+ Free Styleflow animations, <br> tutorials, materials, and more. <span><strong><a href="{% url 'user_auth:signup' %}">sign up</a></strong></span> right away.</p>
+                </div>
+                <div class="img1">
+                    <img src="{% static 'signup/img/signin.png' %}" alt="illustration">
+                </div>
+            </div>
+        </section>
+        <section class="two">
+            <div class="loginform">
+                <form method="post">
+                    {% csrf_token %}
+                    <h3><span>Create an account</span></h3>
+                    <div class="socialmedia">
+                        <!-- <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <i class="fa fa-google" aria-hidden="true"></i>
+                        <i class="fa fa-facebook-official" aria-hidden="true"></i> -->
+                        <img src="{% static 'signup/img/Frame 78.png' %}" alt="socials">
+                    </div>
+                    <div class="or">
+                        <p><small><span>OR</span></small></p>
+                    </div>
+                    <div class="form">
+                        <div><input type="text" id="username" class="input-field" name="username" placeholder="Userame"Required></div>
+                        <div><input type="email" id="email" class="input-field" name="email" placeholder="Email Address"Required></div>
+                        <div><input type="password" id="pass1" class="input-field" name="pass1" placeholder="Password"Required></div>
+                        {% for message in messages %}
+    <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert" style="color:red" >
+        <strong style="color:red">Message:</strong> {{ message }}
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true" style="color:red">&times;</span>
+  </button>
+    </div>
+    {% endfor %}
+                        <div><button type="submit" class="button">Create account</button></div>
+                        <div><h6>Already have an account? <span><strong><a href="{% url 'user_auth:signin' %}">Login</a></strong></span></h6></div>
+                        <div class="terms"><h6><small> By clicking on the button above, you agree to Styleflow <br><span><strong>Terms of Service</strong></span> and <span><strong>Privacy Policy</strong></span></small></h6></div>
+                    </div>
+                </form>
+            </div>    
+        </section>
+        
+    </div>
+</body>
+</html>

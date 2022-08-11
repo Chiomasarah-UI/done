@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;800&family=VT323&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+  position: fixed;
+  background-color: #E8D2F1;
+  width: 100%;
+  height: 3000px;
+}
+.grid-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+header{
+    grid-column: span 2;
+    padding: 10px;
+}
+.logo img{
+    width: 15%;
+}
+.one{
+    padding: 10px;
+    grid-column: span 1;
+}
+.img1 img{
+    width: 80%;
+}
+.two{
+    padding: 10px;
+    grid-column: span 1;
+}
+form{
+    text-align: center;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    width: 70%;
+    padding: 1px;
+    border-radius: 5px;
+}
+h4{
+    margin-top: 10px;
+}
+h3{
+    margin-top: 30px;
+}
+h6{
+    color: #777;
+}
+.text{
+    line-height: 30px;
+}
+.loginhead{
+    margin: 40px;
+}
+.socialmedia{
+    margin-top: 5px;
+}
+.socialmedia img{
+    width: 20%;
+}
+.or{
+    margin-top: 5px;
+}
+.terms{
+    margin-bottom: 20px;
+}
+.input-field{
+	width: 80%;
+	height: 30px;
+	margin-bottom: 25px;
+	border: 1px solid #777;
+	border-radius: 5px;
+}
+.button{
+    width: 80%;
+	height: 30px;
+	border-radius: 5px;
+    border: none;
+	color: #fff;
+	background-color: #8B20BB;
+	transition: .4s;
+}
+.button:hover{
+    color: black;
+	background-color: transparent;
+	border: 2px solid #8B20BB;
+	cursor: pointer;
+}
+i{
+    color: blue;
+}
+.resend{
+    text-align: right;
+	padding-right: 20px;
+    color: #8B20BB;
+    margin-bottom: 40px;
+}
+span{
+    color: #8B20BB;
+}
+h6{
+    margin-top: 30px;
+}
+.resetpassword{
+    background-color: white;
+}
+.reg{
+    background-color: white;
+}
+.resetform{
+    display: block;
+    width: 40%;
+    box-shadow: 0 0 10px 0 #999;
+    padding: 30px;
+    margin: auto;
+}
+.resetform button{
+    margin-bottom: 20px;
+}
+.resetform h3{
+    text-align: left;
+    padding-left: 45px;
+}
+.resetform .input-field{
+    height: 35px;
+}
+.resetform .button{
+    height: 35px;
+}
+.resetform p{
+    text-align: left;
+    padding-left: 45px;
+}
+.resetform a{
+    color: #8B20BB;
+    text-align: right;
+}
+.resetform .resend{
+    text-align: center;
+}
+
+@media only screen and (max-width: 1050px){
+    .loginhead{
+        margin: 20px;
+    }
+    .socialmedia{
+        margin-top: 2px;
+    }
+    .or{
+        margin-top: 2px;
+    }
+    .terms{
+        margin-bottom: 15px;
+    }
+    .input-field{
+        height: 18px;
+        margin-bottom: 18px;
+        border-radius: 4px;
+    }
+    .button{
+        height: 18px;
+        border-radius: 4px;
+    }
+    h4{
+        margin-top: 8px;
+    }
+    h3{
+        margin-top: 20px;
+    }
+    .loginhead{
+        margin: 30px;
+    }
+    .terms{
+        margin-bottom: 15px;
+    }
+    .resetform{
+        width: 500px;
+        height: 400px;
+        margin-top: 50px;
+        font-size: 15px;
+    }
+    header{
+        border-bottom: none;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .logo img{
+        width: 150px;
+        margin-top: 100px;
+    }
+}
+@media only screen and (max-width: 854px){
+    .img1 img{
+        display: none;
+    }
+    .one{
+        display: none;
+    }
+    .grid-container {
+        display: block;
+        padding: 5px;
+        align-content: center;
+        justify-content: center;
+    }
+    form{
+        width: 100%;
+        background-color: white;
+    }
+    body{
+        align-content: center;
+        background-color: white;
+    }
+    header{
+        border-bottom: none;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .logo img{
+        width: 150px;
+        margin-top: 100px;
+    }
+    .resetform{
+        width: 500px;
+        height: 400px;
+        margin-top: 50px;
+        font-size: 15px;
+    }
+    .input-field{
+        height: 20px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+    }
+    .button{
+        height: 20px;
+        border-radius: 4px;
+    }
+}
+@media only screen and (max-width: 670px){
+    body{
+        align-content: center;
+        background-color: white;
+    }
+    .img1 img{
+        display: none;
+    }
+    .socialmedia img{
+        width: 30%;
+    }
+    header{
+        border-bottom: none;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .logo img{
+        width: 150px;
+        margin-top: 100px;
+    }
+    .one{
+        display: none;
+    }
+    .grid-container {
+        display: block;
+        padding: 5px;
+        align-content: center;
+        justify-content: center;
+    }
+    form{
+        width: 100%;
+    }
+    .resetform{
+        width: 400px;
+        height: 400px;
+        margin-top: 50px;
+        font-size: 15px;
+    }
+    }
+@media only screen and (max-width: 375px){
+    body{
+        align-content: center;
+        background-color: white;
+    }
+    .img1 img{
+        display: none;
+    }
+    .one{
+        display: none;
+    }
+    .grid-container {
+        display: block;
+        padding: 5px;
+        align-content: center;
+        justify-content: center;
+        background-color: white;
+    }
+    form{
+        height: 300px;
+        width: 250px;
+        background-color: white;
+    }
+    .logo img{
+        width: 80px;
+        align-self: center;
+        justify-self: center;
+    }
+    header{
+        border-bottom: none;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .logo img{
+        width: 150px;
+        margin-top: 100px;
+    }
+    .input-field{
+        width: 100%;
+        height: 25px;
+        margin: 10px;
+        border: 1px solid #777;
+        border-radius: 2px;
+        color: #777;
+    }
+    h6{
+        color: #777;
+    }
+    h3{
+        margin-top: 0;
+    }
+    .button{
+        width: 100%;
+        height: 25px;
+        margin: 10px;
+        border-radius: 2px;
+        color: #fff;
+        background-color: #8B20BB;
+        transition: .4s;
+    }
+    .terms{
+        margin-top: 50px;
+    }
+    .resetform{
+        width: 300px;
+        height: 300px;
+        margin-top: 50px;
+        font-size: 12px;
+    }
+
+}

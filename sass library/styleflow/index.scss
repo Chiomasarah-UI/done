@@ -1,0 +1,78 @@
+
+@import 'keyframes';
+@import 'variables';
+
+$move-animation: (
+    'up': $move-up,
+    'down': $move-down,
+    'right': $move-right,
+    'left': $move-left,
+);
+
+$fade-animation:(
+    'in': $fade-in,
+    'out': $fade-out,
+);
+
+$rotate-animation: (
+    'up': $rotate-up,
+    'down': $rotate-down,
+    'right': $rotate-right,
+    'left': $rotate-left,
+);
+
+$shake-animation:(
+    'x': $shake-x,
+    'y': $shake-y,
+);
+
+$roll-animation:(
+    'in': $roll-in,
+    'out': $roll-out,
+);
+
+$bounce-animation:(
+    'in': $bounce-in,
+    'out': $bounce-out,
+);
+
+$zoom-animation:(
+    'in': $zoom-in,
+    'out': $zoom-out,
+);
+
+@each $key, $val in $move-animation {
+    .move-#{$key} {
+     animation: $val;
+    }
+}
+@each $key, $val in $fade-animation {
+    .fade-#{$key} {
+        animation: $val;
+       }
+}
+@each $key, $val in $rotate-animation {
+    .rotate-#{$key} {
+     animation: $val;
+    }
+}
+@each $key, $val in $shake-animation {
+    .shake-#{$key} {
+        animation: $val;
+       }
+}
+@each $key, $val in $roll-animation {
+    .roll-#{$key} {
+        animation: $val;
+       }
+}
+@each $key, $val in $bounce-animation {
+    .bounce-#{$key} {
+        animation: $val;
+       }
+}
+@each $key, $val in $zoom-animation {
+    .zom-#{$key} {
+        animation: $val;
+       }
+}
