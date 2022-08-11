@@ -1,0 +1,228 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'home/style.css' %}">
+    <title>StyleFlow</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div id="header-top" class="flex">
+                <img src="{% static 'home/images/logos/styleFlow_header_logo_vector.png' %}" alt="StyleFlow logo" id="logo">
+                <ul id="nav-links" class="flex">
+                    <li><a href="#" id="home">Home</a></li>
+                    <li><a href="#">Animation</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="{% url 'documentation:documentation' %}">Documentation</a></li>
+                </ul>
+
+
+                <ul id="auth" class="flex">
+                    {% if user.is_authenticated %}
+                    <li><a href="{% url 'user_auth:signout' %}"><button id="login" class="btn">Sign Out</button></a></li>
+                    {% else  %}
+                    <li><a href="{% url 'user_auth:signin' %}"><button id="login" class="btn">Login</button></a></li>
+                    <li><a href="{% url 'user_auth:signup' %}"><button id="signup" class="btn">Sign Up</button></a></li>
+                    {% endif %}
+                </ul>
+                <button id="menu-btn">&#9776;</button>
+            </div>
+
+            <div id="main-header" class="flex">
+                <div id="left-header">
+                    <h1 class="title">
+                        Fun and interactive animation for your websites
+                    </h1>
+                    <p>
+                        Sign up to get full access to the tools needed to customize, edit, and add animations to your projects.
+                    </p>
+                    <a href="{% url 'user_auth:signup' %}"><button class="btn">Get Started</button></a>
+                </div>
+                <img src="{% static 'home/images/landing_page_fun_and_interactive.gif' %}" alt="A man typing and his dog" id="typin-dood">
+            </div>
+        </header>
+        <div id="sponsors">
+            <p class="txt-center">Used by developers and designers from <span class="bold">15,000+ companies worldwide</span></p>
+            <ul id="brands" class="flex x-center">
+                <li><img src="{% static 'home/images/logos/zuriteam.png' %}" alt="Zuri Team logo" id="brand"></li>
+                <li><img src="{% static 'home/images/logos/google.png' %}" alt="Google logo" id="brand"></li>
+                <li><img src="{% static 'home/images/logos/uber.png' %}" alt="Uber logo" id="brand"></li>
+                <li><img src="{% static 'home/images/logos/airbnb.png' %}" alt="Airbnb logo" id="brand"></li>
+                <li><img src="{% static 'home/images/logos/ingressive.png' %}" alt="Ingressive 4 Good logo" id="brand"></li>
+            </ul>
+        </div>
+        <main>
+
+            <div id="do-amazing">
+                <h2 class="title txt-center">Do amazing things with StyleFlow</h2>
+                <div id="desc" class="flex">
+                    <img src="{% static 'home/images/landing_page_do_amazing_things.gif' %}" alt="A guy working on his computer" id="typin-dood">
+    
+                    <ul id="access">
+                        <li>
+                            <h3 class="topic">Access thousands of free animations</h3>
+                            <p>Explore the world's largest pool of ready-to-use, free animations and express yourself in a more fun and exciting way.</p>
+                        </li>
+
+                        <li>
+                            <h3 class="topic">Customize animations for your projects</h3>
+                            <p>StyleFlow allows you to easily edit the color of animations to any fun color of your choosing.</p>
+                        </li>
+                        <li>
+                            <h3 class="topic">Preview and test animations</h3>
+                            <p>Use StyleFlow to get an accurate feel of how your animations will look and behave before you put them in your project.</p>
+                        </li>
+                        <li>
+                            <h3 class="topic">Embed animations across your website</h3>
+                            <p>Implement animations in just a few clicks across WordPress, Shopify, Webflow, Squarespace, Wix or any website.</p>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div id="explore" class="x-center txt-center">
+                <p>
+                    Explore the world's largest pool of ready-to-use, free animations and express yourself in a more fun and exciting way.
+                </p>
+                <a href="{% url 'user_auth:signup' %}"><button class="btn">Get Started</button></a>
+            </div>
+            
+            <div id="about-us">
+                <h2 class="title txt-center">
+                    About Us
+                </h2>
+                <div id="words">
+                    <p>
+                        StyleFlow is a web-based animation platform. Our goal is to help beginner developers perform basic web animation using a normal language. We create fun and interactive animations that is both functional and easy to use. Whether it's simple and minimal or edgy and futuristic style we have got you covered!
+                    </p>
+                    <p>
+                        Over time there has been a shift in design, interactive interface has gradually taken precedence over static and this change is the sole reason StyleFlow was born. We not only allow developers bring life to their projects, but give them access to download our animation library so that it is possible to input it into their code.
+                    </p>
+                </div>
+            </div>
+
+            <div id="testimonials">
+                <h2 class="small">TESTIMONIALS</h2>
+                <h2 class="title">
+                    What Our Users Are Saying
+                </h2>
+                <div id="carousels" class="flex">
+                    <div class="user one">
+                        <div class="user-testimony">
+                            <img src="{% static 'home/images/logos/quotes-svgrepo-com.svg' %}" alt="quotes" id="quotes">
+                            <p class="user-msg">
+                                It provides just enough to get started, implements sensible defaults, but is also very extensible and customisable.
+                            </p>
+                        </div>
+                        <div class="profile">
+                            <img src="{% static 'home/images/pic1.jpg' %}" alt="User Image" class="user-img">
+                            <h6 class="user-name">
+                                Joshua Akande
+                            </h6>
+                            <p class="user-mail">
+                                @josh.shine
+                            </p>
+                        </div>
+                    </div>
+                    <div class="user top-layer">
+                        <div class="user-testimony">
+                            <img src="{% static 'home/images/logos/white-quotes-svgrepo-com.svg' %}" alt="quotes" id="quotes">
+                            <p class="user-msg">
+                                I can't tell you how much better my designs are with these easy-to-use animation.
+                            </p>
+                        </div>
+                        <div class="profile">
+                            <img src="{% static 'home/images/pic0.jpg' %}" alt="User Image" class="user-img">
+                            <h6 class="user-name">
+                                Kaothar Dammi
+                            </h6>
+                            <p class="user-mail">
+                                @kao_dammi
+                            </p>
+                        </div>
+                    </div>
+                    <div class="user three">
+                        <div class="user-testimony">
+                            <img src="{% static 'home/images/logos/quotes-svgrepo-com.svg' %}" alt="quotes" id="quotes">
+                            <p class="user-msg">
+                                StyleFlow saves our team tons of time, is well designed and documented, and looks great.
+                            </p>
+                        </div>
+                        <div class="profile">
+                            <img src="{% static 'home/images/profile_pic.jpg' %}" alt="User Image" class="user-img">
+                            <h6 class="user-name">
+                                Nicole Samuel
+                            </h6>
+                            <p class="user-mail">
+                                @nicole.sam
+                            </p>
+                        </div>
+                    </div>
+                    <!-- 
+                        <div class="user-testimony">
+                            <img src="{% static 'home/images/profile_pic.jpg' %}" alt="user image">
+                            <h4>Praise Nwosu</h4>
+                            <h6 class="username">@praisenwosu</h6>
+                            <p class="msg">
+                                Really amazing stuff! This has become my favorite animation library.
+                            </p>
+                        </div>
+                                                <div class="user-testimony">
+                            <img src="{% static 'home/images/profile_pic.jpg' %}" alt="user image">
+                            <h4>Oscar Bamidele</h4>
+                            <h6 class="username">@oscarbamidele</h6>
+                            <p class="msg">
+                                This might be one of the best I've seen!!
+                            </p>
+                        </div>
+                     -->
+                </div>
+            </div>
+
+            <div id="last-main" class="flex">
+                <div id="step-up">
+                    <p>Out with static, in with interactive</p>
+                    <h4 class="title">
+                        Step up your animation game with StyleFlow
+                    </h4>
+                    <a href="{% url 'user_auth:signup' %}"><button class="btn">Sign up now</button></a>
+                </div>
+                <img src="{% static 'home/images/landing_page_step_up.gif' %}" alt="A nigga stepping up his game" id="steppin-up">
+            </div>
+
+        </main>
+        
+        <footer>
+            <img src="{% static 'home/images/logos/sytleFlow_footer_logo_vector.png' %}" alt="Footer Logo" id="logo">
+            
+            <div class="r-align">
+                <a href="{% url 'documentation:documentation' %}"><button class="btn">Documentation</button></a>
+            </div>
+            
+            <p id="copy" class="txt-center">
+                Copyright &copy 2022 StyleFlow Inc. All rights reserved.
+            </p>
+
+            <div id="footer-links" class="flex">
+                <a href="#">Privacy Policy</a>
+                <hr>
+                <a href="#">Terms & Conditions</a>
+            </div>
+        </footer>
+        
+        
+
+
+
+
+    </div>
+
+</body>
+</html>

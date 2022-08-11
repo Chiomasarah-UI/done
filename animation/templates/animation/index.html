@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block css %}
+
+    <link rel="stylesheet" href="{% static 'css/animation/styleflow/index.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animation/style.css' %}">
+    <script src="https://kit.fontawesome.com/4ba5d23ce4.js" crossorigin="anonymous"></script>
+
+{% endblock %}
+
+{% block content %}
+    
+    <section class="sec1">
+        <div class="secimg">
+        <div class="animate-img">
+            <img src="{% static 'images/Animation Card with Logo for Animation Page.png' %}" alt="styleflow-logo-black" class="img">
+        </div>
+    </div>
+    </section>
+    <main>
+        <div class="dprow1">
+        <section class="sec2">
+            <article>
+                <h1>Static Animation</h1>
+            </article>
+            <article class="grid1 grid1anime">
+                <button class="move_up">Move up</button>
+                <button class="move_down">Move down</button>
+                <button class="move_right">Move right</button>
+                <button class="move_left">Move left</button>
+            </article>
+        </section>
+
+        <section class="dpscmargin">
+            <article>
+                <h1>Bling Animation</h1>
+            </article>
+            <article class="grid1 grid1anime">
+                <button class="beat_">Beat</button>
+                <button class="bounce_">Bounce</button>
+                <button class="fade_in">Fade In</button>
+                <button class="fade_out">Fade Out</button>
+            </article>
+        </section>
+
+        <section class="dpscmargin">
+            <article>
+                <h1>Rotate Animation</h1>
+            </article>
+            <article class="grid1 grid1anime">
+                <button class="rotate_up">Rotate Up</button>
+                <button class="rotate_right">Rotate Right</button>
+                <button class="rotate_down">Rotate Down</button>
+                <button class="rotate_left">Rotate Left</button>
+            </article>
+        </section>
+       </div>
+        <section>
+            <article>
+                <h1>Special Animation</h1>
+            </article>
+            <article class="grid1">
+                <button class="rubber_band">Rubber band</button>
+                <button class="surprise_">Surprise</button>
+                <button class="shake_">Shake</button>
+                <button class="wobble_">Wobble</button>
+                <button class="jelly_">Jelly</button>
+                <button class="pulse_">Pulse</button>
+            </article>
+        </section>
+
+        
+        <section>
+            <article>
+                <h1>Other Animations</h1>
+            </article>
+            <article class="grid1 grid3anime">
+                <button class="hinge_">Hinge</button>
+                <button class="roll_in">Roll In</button>
+                <button class="roll_out">Roll Out</button>
+                <button class="jack_in">JackInTheBox</button>
+                <button class="shake_x">ShakeX</button>
+                <button class="shake_y">ShakeY</button>
+                <button class="swing_">Swing</button>
+                <button class="bounce_in">Bounce In</button>
+                <button class="bounce_out">Bounce Out</button>
+                <button class="flip_">Flip</button>
+                <button class="zoom_out">Zoom Out</button>
+                <button class="zoom_in">Zoom In</button>
+            </article>
+        </section>
+   
+    </main>
+
+{% endblock %}
+
+{% block js_block %}
+
+    <script src="{% static 'js/script.js'%}"></script>
+
+{% endblock %}

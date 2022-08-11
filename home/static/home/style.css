@@ -1,0 +1,732 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+:root {
+    --regular-purple: #8b20bb;
+    --bg-color: hsla(0, 0%, 100%, 1);
+    --greyy: hsla(0, 0%, 50%, 1);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 24px;
+}
+
+body {
+    font-family: Poppins;
+    background-color: #1e1e1e;
+    /* background-color: var(--bg-color); */
+}
+
+#wrapper {
+    background-color: var(--bg-color);
+    width: 63rem;
+    margin: auto;
+}
+#menu-btn {
+    display: none;
+}
+
+a {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+.small {
+    font-size: 0.7999999999999999rem;
+    line-height: 1.2rem;
+    font-weight: 500;
+}
+.txt-center {
+    text-align: center;
+}
+.x-center {
+    margin: 0 auto;
+}
+
+.btn {
+    border-radius: 4px;
+    font-size: 1rem;
+    height: 3.2083333333333335rem;
+    width: 11.916666666666666rem;
+    border: 1px solid var(--regular-purple);
+    background-color: var(--regular-purple);
+    color: var(--bg-color);
+}
+.r-align {
+    text-align: right;
+}
+.topic {
+    font-weight: 500;
+    line-height: 1.7916666666666667rem;
+    font-size: 1.2rem;
+}
+.title {
+    font-weight: 500;
+    font-size: 2.0833333333333335rem;
+    line-height: 3.125rem;
+}
+.bold {
+    font-weight: 700;
+}
+#left-header p {
+    font-size: 0.75rem;
+    width: 20.5rem;
+}
+#left-header > * {
+    margin-bottom: 1.6666666666666667rem;
+}
+#left-header > *:last-child {
+    margin-bottom: 0;
+}
+#left-header {
+    width: 42.32804232804233%;
+    height: fit-content;
+    margin: auto 0;
+}
+#left-header h1 {
+    line-height: 2.5rem;
+}
+#header-top {
+    padding: 1.1458333333333333rem 5.0rem;
+    line-height: 3.375rem;
+    box-shadow: 0 2px 15px 0 hsla(0, 0%, 50%, 0.1);
+    position: sticky;
+    top: 0;
+    background-color: var(--bg-color);
+}
+#main-header {
+    margin: 1.1458333333333333rem 0 6.541666666666667rem;
+    justify-content:center;
+}
+
+#logo {
+    height: 3.375rem;
+    width: 9.25rem;
+}
+#auth {
+    width: 13.916666666666666rem;
+}
+
+#nav-links {
+    font-size: 0.6666666666666666rem;
+    width: 34.589947089947096%;
+    line-height: 3.375rem;
+}
+#nav-links a {
+    color: var(--greyy);
+}
+a#home {
+    color: var(--regular-purple);
+}
+#login, #signup {
+    width: 6.625rem;
+    height: 2.0833333333333335rem;
+    font-size: 0.8333333333333334rem;
+}
+#login {
+    background-color: var(--bg-color);
+    color: var(--regular-purple);
+}
+#typin-dood {
+    width: 26.666666666666668rem;
+    height: fit-content;
+    margin: auto 0;
+}
+
+#sponsors {
+    border-top: 1px solid var(--greyy);
+    border-bottom: 1px solid var(--greyy);
+    padding: 2.9254166666666666rem 0;
+}
+#sponsors p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    margin-bottom: 1.6754166666666668rem;
+}
+#brands {
+    width: 53.042328042328045%;
+    height: 1.8570833333333334rem;
+}
+#brand {
+    width: 4.930555555555555rem;
+    height: auto;
+}
+#do-amazing {
+    padding-right: 5.0rem;
+    padding-left: 2rem;
+}
+#do-amazing .title {
+    line-height: 3.125rem;
+}
+#desc {
+    margin: 2.9166666666666665rem auto 0;
+}
+
+#access li {
+    list-style-type: disc;
+    margin-bottom: 2.5rem;
+}
+#access li::marker {
+    color: var(--greyy);
+    font-size: 2rem;
+}
+#access p {
+    font-size: 1rem;
+    line-height: 2rem;
+    font-weight: 400;
+}
+
+main {
+    padding-top: 5.25rem;
+}
+
+#access {
+    width: 26.833333333333336rem;
+    border-left: 2px solid var(--greyy);
+    padding-left: 1.30rem;
+}
+
+#explore {
+    width: 33.291666666666664rem;
+    height: fit-content;
+    margin: 2.3541666666666665rem auto;
+}
+#explore p {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 2.1666666666666665rem;
+}
+#about-us .title {
+    color: var(--regular-purple);
+}
+#about-us {
+    background-color: #e8d2f1;
+}
+#about-us p {
+    margin: 0 auto;
+    width: 82.20899470899471%;
+    font-size: 1.1666666666666667rem;
+    line-height: 1.75rem;
+}
+#about-us p:not(:last-child) {
+    margin-bottom: 1.5416666666666667rem;
+}
+#words {
+    padding-top: 0.5rem;
+    padding-bottom: 6.708333333333333rem;
+}
+
+#testimonials {
+    background-color: rgba(232, 210, 241, 0.4);
+    text-align: center;
+    padding-top: 1.9166666666666667rem;
+    padding-bottom: 2.625rem;
+}
+
+#carousels {
+    width: 94.1137566137566%;
+    margin: 4.75rem auto;
+    position: relative;
+}
+
+.user {
+    width: 35.628952916373855%;
+    text-align: center;
+    z-index: 1;
+    position: absolute;
+}
+.profile {
+    width: fit-content;
+    margin: -2.0833333333333335rem auto 0;
+    z-index: 999;
+}
+.one {
+    top: 2.3333333333333335rem;
+    left: 0;
+}
+.three {
+    top: 2.3333333333333335rem;
+    right: 0;
+}
+
+.top-layer {
+    z-index: 10;
+    position: relative;
+    margin: auto;
+}
+.top-layer .user-testimony {
+    background-color: var(--regular-purple);
+    color: hsla(0, 0%, 100%, 1);    
+}
+.top-layer #quotes {
+    color: "white";
+}
+
+.user-name {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+}
+
+.user-mail {
+    font-size: 0.7rem;
+}
+
+.user-img {
+    width: 4.166666666666667rem;
+    height: 4.166666666666667rem;
+    border-radius: 50%;
+}
+
+.user-testimony {
+    background-color: var(--bg-color);
+    height: 14.333333333333334rem;
+    border-radius: 1rem;
+    box-shadow: 0px 5px 10px 5px hsla(0, 0%, 50%, 0.3);
+}
+
+.user-msg {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+#quotes {
+    width: 3.6666666666666665rem;
+    height: 2.5833333333333335rem;
+    margin: 1.3958333333333333rem auto 1.3333333333333333rem;
+}
+
+.user-msg {
+    width: 16.125rem;
+    height: fit-content;
+    margin:auto;
+}
+#last-main {
+    margin: 1.6875rem auto;
+    padding-left: 5.0rem;
+    padding-right: 2.6666666666666665rem;
+    padding-top: 0.5416666666666666rem;
+    padding-bottom: 0.5416666666666666rem;
+    border-top: 2px solid var(--regular-purple);
+    border-bottom: 2px solid var(--regular-purple);
+}
+
+#step-up p {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+#step-up {
+    width: 33.625rem;
+    height: fit-content;
+    margin: auto;
+}
+#steppin-up {
+    width: 21.708333333333332rem;
+    height: auto;
+}
+#step-up .title {
+    margin: 0.6666666666666666rem 0 1.5rem;
+}
+footer {
+    position: relative;
+    border-top: 1px solid var(--regular-purple);
+    padding-top: 1.5833333333333333rem;
+    padding-bottom: 1.5833333333333333rem;
+    padding-left: 5.0rem;
+    padding-right: 5.0rem;
+}
+footer #logo {
+    position: absolute;
+    top: 2.0rem;
+    left: 5.0rem;
+    width: 14.666666666666666rem;
+    height: 5.375rem;
+}
+
+#copy, #footer-links a {
+    color: var(--greyy);
+    font-size: 1.1666666666666667rem;
+    line-height: 1.75rem;
+    font-weight: 400;
+}
+p#copy {
+    position: relative;
+    z-index: 11;
+    margin: 1.75rem 0;
+}
+#footer-links {
+    background-color: var(--greyy);
+}
+#footer-links a {
+    display: block;
+    width: 49.9%;
+    height: 100%;
+    background-color: var(--bg-color);
+}
+#footer-links a:last-child {
+    text-align: right;
+}
+footer .btn {
+    width: 16.041666666666668rem;
+    height: 3.1666666666666665rem;
+}
+
+
+
+
+@media screen and (max-width: 1512px) {
+    html {
+        font-size: 1.5873015873015872vw;
+
+    }
+    
+    #wrapper {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    #access {
+        padding-left: 1.35rem;
+    }
+}
+@media screen and (max-width: 990px) {
+    #access {
+        padding-left: 1.38rem;
+    }
+}
+@media screen and (max-width: 760px) {
+    #access {
+        padding-left: 1.55rem;
+    }
+}
+@media screen and (max-width: 575px) {
+    #access {
+        padding-left: 1.72rem;
+        border-width: 1px;
+    }
+}
+
+
+/* Mobile View */
+@media screen and (max-width: 480px) {
+    * {
+        padding: 0;
+        border: 0;
+        box-sizing: 0;
+    }
+    html {
+        font-size: 4.266666666666667vw; /* This will make the font-size to be 16px when the viewport width is 375px */
+    }
+    #wrapper {
+        width: 100%;
+    }
+
+    #nav-links, #auth, main #typin-dood, #quotes, #about-us p:last-child {
+        display: none;
+    }
+    #menu-btn {
+        display: block;
+        width: 1.0rem;
+        font-size: 1rem;
+        height: fit-content;
+        margin: auto 0;
+        color: var(--regular-purple);
+        background-color: var(--bg-color);
+        border-width: 0;
+    }
+    #logo {
+        height: 2rem;
+        width: auto;
+        margin: auto 0;
+    }
+
+    #header-top {
+        width: 100%;
+        padding: 0 1.25rem 0;
+        height: 2.5rem;
+        line-height: 2.5rem;
+        flex-direction: row;
+    }
+    .flex {
+        flex-direction: column;
+    }
+    .title {
+        font-size: 2.16rem;
+        line-height: 3.24rem;
+        text-align: center;
+        font-weight: 500;
+    }
+    #main-header {
+        margin: 7.25rem 0 3.863125rem;
+    }
+    #left-header {
+        width: 21.625rem;
+        /* width: 92.26666666666667%; */
+        margin: auto;
+    }
+    #left-header p {
+        font-size: 0.823125rem;
+        line-height: 1.600625rem;
+        margin: 0 auto 1.14375rem;
+        font-weight: 400;
+        width: 16.1075rem;
+    }
+    .btn {
+        padding: 0.025rem 2.883125rem;
+        height: fit-content;
+        width: fit-content;
+        font-size: 1rem;
+        line-height: 2.625rem;
+        font-weight: 400;
+        border-radius: 4px;
+        color: hsla(0, 0%, 100%, 0.9);
+    }
+    #left-header a {
+        display: block;
+        margin: auto;
+        width: fit-content;
+    }
+    #typin-dood {
+        width: 18.0625rem;
+        height: auto;
+        margin: 3.8065625rem auto;
+    }
+
+    #sponsors {
+        padding: 2.261875rem 0 1.3525rem;
+    }
+    #sponsors p {
+        font-size: 1.0rem;
+        font-weight: 400;
+        line-height: 1.5rem;
+        width: 18.9375rem;
+        margin: 0 auto 1.890625rem;
+    }
+    #brands {
+        width: 17.123125rem;
+        height: fit-content;
+        margin: auto;
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap-reverse;
+    }
+    #brand li {
+        width: 34%;
+        height: auto;
+    }
+
+    main {
+        padding-top: 2.8125rem;
+    }
+    #do-amazing {
+        padding: 0;
+    }
+    #do-amazing .title {
+        margin-bottom: 3.0rem;
+    }
+    #access {
+        width: 20.1875rem;
+        margin: auto;
+        padding-left: 1.4375rem;
+    }
+    #desc {
+        margin: 0;
+    }
+    #access p {
+        font-size: 1.0rem;
+        line-height: 1.5rem;
+        font-weight: 400;
+    }
+    #access li {
+        width: 18.25rem;
+    }
+    .topic {
+        font-size: 1.25rem;
+        line-height: 1.875rem;
+        font-weight: 500;
+    }
+    #explore {
+        padding: 0;
+        width: fit-content;
+        height: fit-content;
+        margin: 3.875rem auto 2.72875rem;
+    }
+    #explore p {
+        width: 20.9375rem;
+        font-weight: 500;
+        font-size: 1.25rem;
+        line-height: 1.875rem;
+    }
+    #about-us {
+        width: 20.6875rem;
+        margin: 0 auto 2.6875rem;
+    }
+    #about-us .title {
+        margin-bottom: 1.1875rem;
+    }
+    #about-us p {
+        width: 18.5625rem;
+        margin: 0 auto;
+        font-size: 1.2rem;
+        line-height: 2.5625rem;
+    }
+    #about-us p:not(:last-child) {
+        margin-bottom: 0.875rem;
+    }
+    #words {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    #testimonials {
+        background-color: var(--bg-color);
+        padding: 0;
+    }
+    .small {
+        font-size: 1.0rem;
+        line-height: 1.5rem;
+        font-weight: 400;
+        margin-bottom: 0.25rem;
+    }
+
+    #carousels {
+        width: 100%;
+        flex-direction: column;
+        position: static;
+    }
+    .top-layer {
+        position: static;
+    }
+    .user {
+        width: 20.4375rem;
+        margin: 3.5rem auto 0;
+        display: flex;
+        flex-direction: column-reverse;
+        position: static;
+        
+    }
+    .profile {
+        margin: 0 auto;
+    }
+    .user-img {
+        width: 6.25rem;
+        height: 6.25rem;
+        margin-bottom: 0.5rem;
+    }
+    .user-name {
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        font-weight: 700;
+    }
+    .user-mail {
+        font-size: 1.2rem;
+        line-height: 2.25rem;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+    }
+    .user-msg {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        background-color: var(--bg-color);
+        width: 100%;
+        color: hsla(0, 0%, 0%, 1);
+    }
+    .user-testimony {
+        width: fit-content;
+        height: fit-content;
+        box-shadow: 0 0 0 0;
+    }
+    #last-main {
+        margin: 5.5rem auto 2.5rem;
+        padding: 1.625rem 0 3.774375rem;
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+    #step-up p {
+        font-size: 1.0rem;
+        line-height: 1.5rem;
+        font-weight: 400;
+        margin-bottom: 1.0rem;
+        text-align: center;
+    }
+    #step-up {
+        width: 100%;
+        text-align: center;
+    }
+    #steppin-up {
+        margin: 0 auto 2.204375rem;
+        width: 22.375rem;
+        /* height: 22.375rem; */
+        height: auto;
+    }
+    #step-up .title {
+        width: 21.875rem;
+        margin: 0 auto 2.25rem;
+    }
+
+
+
+
+
+
+    /* footer */
+    footer {
+        padding-top: 1rem;
+        padding-bottom: 0.5625rem;
+        padding-left: 1.5625rem;
+        padding-right: 1.5625rem;
+    }
+    footer #logo {
+        top: 1rem;
+        left: 1.5625rem;
+        width: 7.086875rem;
+        height: 2.5rem;
+
+    }
+
+    #copy, #footer-links a {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+    }
+    #footer-links {
+        flex-direction: row;
+        background-color: var(--bg-color); /* WARNING: un-comment this to display the separating line on mobile view but you might not like the result. For you to even see this, I know you probably wouldn't listen. */
+    }
+    #footer-links a {
+        color: var(--regular-purple);
+    }
+    p#copy {
+        width: 13.8125rem;
+        height: fit-content;
+        margin: 0.9375rem auto 0.5rem;
+    }
+    footer .btn {
+        padding: 0;
+        width: 7.875rem;
+        height: 2.25rem;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+    }
+
+}
+

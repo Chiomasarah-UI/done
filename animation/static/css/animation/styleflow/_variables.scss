@@ -1,0 +1,61 @@
+$move-up: move-up 3s infinite;
+$move-down: move-down 3s infinite;
+$move-right: move-right 3s infinite;
+$move-left: move-left 3s infinite;
+
+$fade-in: fade-in 3s infinite;
+$fade-out: fade-out 3s infinite;
+
+$rotate-up: rotate-up 3s infinite;
+$rotate-down: rotate-down 3s infinite;
+$rotate-right: rotate-right 3s infinite;
+$rotate-left: rotate-left 3s infinite;
+
+$roll-in: rollIn 3s infinite;
+$roll-out: rollOut 3s infinite;
+
+$bounce-in: bounceIn 3s infinite;
+$bounce-out: bounceOut 3s infinite;
+
+$zoom-in: zom-in 3s infinite;
+$zoom-out: zom-out 3s infinite;
+
+$shake-x: shakeX 3s infinite;
+$shake-y: shakeY 3s infinite;
+
+.bounce{
+    animation: bounce 3s infinite;
+}
+.pulse{
+    animation: pulse 3s infinite;
+}
+.rubber-band{
+    animation: rubberBand 3s infinite;
+}
+.shake{
+    animation: shake 3s infinite;
+}
+.swing{
+    animation: swing 3s infinite;
+}
+.surprise{
+    animation: surprise 3s infinite;
+}
+.wobble{
+    animation: wobble 3s infinite;
+}
+.jelly{
+    animation: jelly 3s infinite;
+}
+.flip{
+    animation: flipa 3s infinite;
+}
+.hinge{
+    animation: hinge 3s infinite;
+}
+.jackInTheBox{
+    animation: jackInTheBox 3s infinite;
+}
+.beat{
+    animation: beat 3s infinite;
+}

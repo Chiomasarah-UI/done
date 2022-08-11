@@ -1,0 +1,368 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block css %}
+
+    <link rel="stylesheet" href="{% static 'css/documentation/documentation.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+{% endblock %}
+
+{% block content %}
+
+    <div class="wrapper">
+        
+        <div class="outer-side">
+            <!-- outer side space -->
+        </div>
+
+        <div class="left">
+            <h3><a href="#introduction">INTRODUCTION</a></h3>
+            <h3><a href="#tutorial">TUTORIAL</a></h3>
+            <h3><a href="#how-to-guide">HOW-TO-GUIDE</a></h3>
+            <h3><a href="#technical-reference">TECHNICAL REFERENCE</a></h3>
+            <h3><a href="#background">BACKGROUND</a></h3>
+        </div>
+
+        <div class="right">
+
+            <div class="grid-container">
+
+                <section id="introduction">
+                    <h3 class="center-text">INTRODUCTION</h3>
+                    <p>Styleflow is a library that holds interactive animation that can be readily accessed by developers. 
+                        This is an animation library completely built with sass, and currently contains only basic animation.</p>
+                    
+                </section>
+
+                <section id="tutorial">
+                    <!-- <hr class="horizontal-line"> -->
+                    <h3 class="center-text">TUTORIAL</h3>
+                    <h4>Animate a string to move-up:</h4>
+                    <p>Add the class "move-up" to the h1 tag to animate the enclosed string</p>
+                    <table class="terminal">
+                        <tr>
+                            <th>Input</th>
+                            <th>Output</th>
+                        </tr>
+                        <tr>
+                            <td class="input">
+                                <p>&lt;!-- enter class below --&gt;</p>
+                                <span>
+                                    &lt;h1
+                                    <input type="text" value='class = "move-up"' id="move-up" size="12">
+                                    &gt; I just moved up &lt;&#x2215;h1&gt;
+                                </span>
+                                <p>&lt;!-- enter class above --&gt;</p>
+
+                                <button onclick="moveUpFunc()" class="button"><h4>RUN</h4></button> 
+                            </td>
+                            <td class="moveUpScreen">
+                                <!-- screen will display code result -->
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+
+                <section>        
+                    <h4>Animate a string to move-down:</h4>
+                    <p>Add the class "move-down" to the h1 tag to animate the enclosed string</p>
+
+                    <table class="terminal">
+                        <tr>
+                            <th>Input</th>
+                            <th>Output</th>
+                        </tr>
+                        <tr>
+                            <td class="input">
+                                <p>&lt;!-- enter class below --&gt;</p>
+                                <span>
+                                    &lt;h1
+                                    <input type="text" value='class = "move-down"' id="move-down" size="15">
+                                    &gt; I just moved move-down &lt;&#x2215;h1&gt;
+                                </span>
+                                <p>&lt;!-- enter class above --&gt;</p>
+                                <button onclick="moveDownFunc()" class="button"><h4>RUN</h4></button> 
+                            </td>
+                            <td class="moveDownScreen">
+                                <!-- screen will display code result -->
+                            </td>
+                        </tr>
+                    </table>
+
+                </section>
+
+                <section>        
+                    <h4>Animate a string to move-left:</h4>
+                    <p>Add the class "move-left" to the h1 tag to animate the enclosed string</p>
+
+                    <table class="terminal">
+                        <tr>
+                            <th>Input</th>
+                            <th>Output</th>
+                        </tr>
+                        <tr>
+                            <td class="input">
+                                <p>&lt;!-- enter class below --&gt;</p>
+                                <span>
+                                    &lt;h1
+                                    <input type="text" value='class = "move-left"' id="move-left" size="15">
+                                    &gt; I just moved move-down &lt;&#x2215;h1&gt;
+                                </span>
+                                <p>&lt;!-- enter class above --&gt;</p>
+                                <button onclick="moveLeftFunc()" class="button"><h4>RUN</h4></button> 
+                            </td>
+                            <td class="moveLeftScreen">
+                                <!-- screen will display code result -->
+                            </td>
+                        </tr>
+                    </table>
+
+                </section>
+
+                <section>        
+                    <h4>Animate a string to move-right:</h4>
+                    <p>Add the class "move-right" to the h1 tag to animate the enclosed string</p>
+
+                    <table class="terminal">
+                        <tr>
+                            <th>Input</th>
+                            <th>Output</th>
+                        </tr>
+                        <tr>
+                            <td class="input">
+                                <p>&lt;!-- enter class below --&gt;</p>
+                                <span>
+                                    &lt;h1
+                                    <input type="text" value='class = "move-right"' id="move-right" size="15">
+                                    &gt; I just moved move-down &lt;&#x2215;h1&gt;
+                                </span>
+                                <p>&lt;!-- enter class above --&gt;</p>
+                                <button onclick="moveRightFunc()" class="button"><h4>RUN</h4></button> 
+                            </td>
+                            <td class="moveRightScreen">
+                                <!-- screen will display code result -->
+                            </td>
+                        </tr>
+                    </table>
+
+                </section>
+
+                <section>        
+                    <h4>Animate a string to fade-in:</h4>
+                    <p>Add the class "fade-in" to the h1 tag to animate the enclosed string</p>
+
+                    <table class="terminal">
+                        <tr>
+                            <th>Input</th>
+                            <th>Output</th>
+                        </tr>
+                        <tr>
+                            <td class="input">
+                                <p>&lt;!-- enter class below --&gt;</p>
+                                <span>
+                                    &lt;h1
+                                    <input type="text" value='class = "fade-in"' id="fade-in" size="15">
+                                    &gt; I just moved move-down &lt;&#x2215;h1&gt;
+                                </span>
+                                <p>&lt;!-- enter class above --&gt;</p>
+                                <button onclick="fadeInFunc()" class="button"><h4>RUN</h4></button> 
+                            </td>
+                            <td class="fadeInScreen">
+                                <!-- screen will display code result -->
+                            </td>
+                        </tr>
+                    </table>
+
+                </section>
+
+                <section>        
+                    <h4>Animate a string to fade-out:</h4>
+                    <p>Add the class "fade-out" to the h1 tag to animate the enclosed string</p>
+
+                    <table class="terminal">
+                        <tr>
+                            <th>Input</th>
+                            <th>Output</th>
+                        </tr>
+                        <tr>
+                            <td class="input">
+                                <p>&lt;!-- enter class below --&gt;</p>
+                                <span>
+                                    &lt;h1
+                                    <input type="text" value='class = "fade-out"' id="fade-out" size="15">
+                                    &gt; I just moved move-down &lt;&#x2215;h1&gt;
+                                </span>
+                                <p>&lt;!-- enter class above --&gt;</p>
+                                <button onclick="fadeOutFunc()" class="button"><h4>RUN</h4></button> 
+                            </td>
+                            <td class="fadeOutScreen">
+                                <!-- screen will display code result -->
+                            </td>
+                        </tr>
+                    </table>
+
+                </section>
+
+                <section>        
+                    <h4>Animate a string to bounce:</h4>
+                    <p>Add the class "bounce" to the h1 tag to animate the enclosed string</p>
+
+                    <table class="terminal">
+                        <tr>
+                            <th>Input</th>
+                            <th>Output</th>
+                        </tr>
+                        <tr>
+                            <td class="input">
+                                <p>&lt;!-- enter class below --&gt;</p>
+                                <span>
+                                    &lt;h1
+                                    <input type="text" value='class = "bounce"' id="bounce" size="15">
+                                    &gt; I just moved move-down &lt;&#x2215;h1&gt;
+                                </span>
+                                <p>&lt;!-- enter class above --&gt;</p>
+                                <button onclick="bounceFunc()" class="button"><h4>RUN</h4></button> 
+                            </td>
+                            <td class="bounceScreen">
+                                <!-- screen will display code result -->
+                            </td>
+                        </tr>
+                    </table>
+
+                </section>
+
+                <section id="how-to-guide">
+                    <h3 class="center-text">HOW-TO GUIDE</h3>
+                    <h4>How to download styleflow library:</h4>
+                    <p>The library files will be downloadable to our users for fast and easy use.
+                       To do that first, the user must sign up to our website or sign in 
+                       if they are already registered. Then they can download the library zip files from the library page.
+                    </p>
+
+                    <h4>How to use basic animations on html elements:</h4>
+                    <p>After downloading the library on their local machine, the next step is how to use it;
+                       To implement our library on your project, you will have to add the library to the same folder’s directory.
+                       Then add the name of the library file “styleflow.css” to the link tag of your html head.
+                       After this, you can include the different styles to the class of tags you wish to animate.
+                    </p>
+
+                    <h4>How to add intensity to your animation:</h4>
+                    <p>Also we were able to add intensity in case our users are not satisfied with animation.
+                       You can adjust the animation to suit your satisfaction.
+                    </p>
+                </section>
+
+                <section id="technical-reference">
+                    <h3 class="center-text">TECHNICAL REFERENCE</h3>
+                    <h4>Installation:</h4>
+                    <p>styleflow is downloaded from www.styleflow.css as a .scss file.
+                        The library is compatible with visual code, sublime text editor and espresso.
+                    </p>
+
+                    <h4>File location:</h4>
+                    <p>styleflow is downloaded into the download folder of a user's local machine.</p>
+
+                    <h4>File content:</h4>
+                    <p>styleflow contains basic, ready-to-use animation for styling web elements. They include;</p>
+                    <ol>
+                        <li>
+                            <p>class-name: move-up</p>
+                            <p>styles an html object to move up</p>
+                        </li>
+                        <li>
+                            <p>class-name: move-down</p>
+                            <p>styles an html object to move down</p>
+                        </li>
+                        <li>
+                            <p>class-name: move-right</p>
+                            <p>styles an html object to move right</p>
+                        </li>
+                        <li>
+                            <p>class-name: move-left</p>
+                            <p>styles an html object to move left</p>
+                        </li>
+                        <li>
+                            <p> class-name: fade-in</p>
+                            <p>styles an html object to fade in</p>
+                        </li>
+                        <li>
+                            <p>class-name: fade-out</p>
+                            <p>styles an html object to fade out</p>
+                        </li>
+                    </ol>
+
+                    <h4>Privacy:</h4>
+                    <ol>
+                        <li>styleflow allows users to manage personal info.</li>
+                        <li>styleflow does not sell user information.</li>
+                        <li>styleflow is built with strong security features that continuously protect your information.</li>
+                    </ol>
+                </section>
+
+                <section id="background">
+                    <h3 class="center-text">BACKGROUND</h3>
+                    <h4>Styling and frameworks:</h4>
+
+                    <p>Largely, frameworks have been adopted as a styling solution for developers due to several reasons such as reusability and speed. </p>
+                    <p>However, they have come under high criticism from most pedantic developers for their simplicity and base nature. 
+                       They have been considered as reason for generic codes, self-damaging to newbies and less rewarding websites.
+                    </p>
+                    <p>The debate seems to stage speed against generic websites and could well be an exciting one to indulge in. 
+                        But here are a few things we have noted;
+                    </p>
+                    <ol>
+                        <li>Frameworks are useful for developers who don't need to reinvent the wheel.</li>
+                        <li>Frameworks work well for learners who learn by questioning processes as they would eventually question certain rule abstractions.</li>
+                        <li>Frameworks actually help with speed and this may be at the expense of customization.</li>
+                        <li>Frameworks could come very handy for building mini-projects that do not involve a design team.</li>
+                        <li>Frameworks largely discourage research as a lot of design-solutions could be available in certain libraries for retrieval.</li>
+                    </ol>
+
+                    <p>Thus, the dabble into frameworks or the resistance to frameworks largely rest on the intentions of the developer and rightly do. 
+                       Therefore, styleflow users are encouraged to be certain about their need for an animation library before indulging.
+                    </p>
+
+                    <h4>Recommended text-editors:</h4>
+                    <ol>
+                        <li>Sublime text editor</li>
+                        <li>Visual Studio Code editor</li>
+                        <li>Espresso editor</li>
+                    </ol>
+                </section>
+            </div>
+
+        </div>
+        
+        <div class="outer-side">
+            <!-- outer side space -->
+        </div>
+    </div>
+
+    <div class="interaction-box center-text">
+        <p>Was this helpful?</p>
+        <ul class="flex yes-no">
+            <div class="center-div">
+                <li><button id="yes" class="btn interactive-button">
+                    <span id="yesIcon"><i class="far fa-thumbs-up"></i></span>
+                    <span id="yesCount">0</span>
+                    YES
+                </button></li>
+                <li><button id="no" class="btn interactive-button">
+                    <span id="noIcon"><i class="fa-solid fa-thumbs-down"></i></span> 
+                    <span id="noCount">0</span>
+                    NO
+                </button></li>
+            </div>
+        </ul>
+    </div>
+
+
+{% endblock %}
+
+{% block js_block %}
+
+    <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
+
+{% endblock %}

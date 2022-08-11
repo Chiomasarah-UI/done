@@ -1,0 +1,67 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleFlow</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">  
+
+    {% block css %}
+
+    {% endblock %}
+    
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div id="header-top" class="flex">
+                <img src="{% static 'home/images/logos/styleFlow_header_logo_vector.png' %}" alt="StyleFlow logo" id="logo">
+                <ul id="nav-links" class="flex">
+                    <li><a href="{% url 'home:home' %}">Home</a></li>
+                    <li><a href="#">Animation</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="{% url 'documentation:documentation' %}" id="documentation">Documentation</a></li>
+                </ul>
+
+
+                <ul id="auth" class="flex">
+                    <li><a href="{% url 'user_auth:signin' %}"><button id="login" class="btn">Login</button></a></li>
+                    <li><a href="{% url 'user_auth:signup' %}"><button id="signup" class="btn">Sign Up</button></a></li>
+                </ul>
+                <button id="menu-btn">&#9776;</button>
+            </div>
+        </header>
+
+            {% block content %}
+
+            {% endblock %}
+
+        <footer>
+            <img src="{% static 'home/images/logos/sytleFlow_footer_logo_vector.png' %}" alt="Footer Logo" id="logo">
+            
+            <div class="r-align">
+                <a href="{% url 'documentation:documentation' %}"><button class="btn">Documentation</button></a>
+            </div>
+            
+            <p id="copy" class="txt-center">
+                Copyright &copy 2022 StyleFlow Inc. All rights reserved.
+            </p>
+
+            <div id="footer-links" class="flex">
+                <a href="#">Privacy Policy</a>
+                <hr>
+                <a href="#">Terms & Conditions</a>
+            </div>
+        </footer>
+    </div>
+
+    {% block js_block %}
+
+    {% endblock %}
+</body>
+</html>
+
